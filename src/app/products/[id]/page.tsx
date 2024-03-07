@@ -24,14 +24,14 @@ export default function Page({ params }: { params: { id: number } }) {
             </div>
           <div> 
             <div>
-            <h3 className="flexflex-col mt-6 font-semibold">SELECT SIZE</h3>
-            <div className="gap-x-5">
-            </div>
+            <h3 className="flex flex-col mt-6 font-semibold">SELECT SIZE</h3>
+            <div className="gap-x-5"></div>
           {/*sizes*/}
             <div className=" flex items-center justify-between mt-3">
             {
   sizes.map((item)=>{
-    return ( <div className=" flex h-8 w-8 justify-center items-center duration-300 border bg-gray-200 rounded-full
+    return ( 
+    <div  key={item} className=" flex h-8 w-8 justify-center items-center duration-300 border bg-gray-200 rounded-full
      mt-4 hover:shadow-xl">
       
      <span className=" flex text-[12px] font-bold border  text-gray-600 ">
